@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function()
 		button.onclick = function()
 		{
 			group_number = button.dataset.gp;
+			// only open eye button for group 6
+			document.querySelector('#eye-button').disabled = !(group_number === '5')
 		};
 	})
 
@@ -33,12 +35,13 @@ document.addEventListener('DOMContentLoaded', function()
 			{
 				button.getElementsByTagName('span')[0].innerHTML = String.fromCodePoint(suit_type + parseInt(button.dataset.t)) + "&#xFE0E;";
 			})	
-			// not showing tiles after bakban
+			// disabling and not showing button 8 and 9
 			if (suit_type === 126976)
 			{
-				document.querySelectorAll('button[button-type="t"]')[7].getElementsByTagName('span')[0].innerHTML = "　";
-				document.querySelectorAll('button[button-type="t"]')[8].getElementsByTagName('span')[0].innerHTML = "　";
+				document.querySelector('#button8').getElementsByTagName('span')[0].innerHTML = "　";
+				document.querySelector('#button9').getElementsByTagName('span')[0].innerHTML = "　";
 			}
+			document.querySelector('#straight-button').disabled = (suit_type === 126976);
 		};
 	})	
 
@@ -48,12 +51,9 @@ document.addEventListener('DOMContentLoaded', function()
 		button.onclick = function()
 		{
 			group_type = button.dataset.gt;
-			// not showing 8 and 9 when selected straight
-			if (group_type === 'Straight')
-			{
-				document.querySelectorAll('button[button-type="t"]')[7].getElementsByTagName('span')[0].innerHTML = "　";
-				document.querySelectorAll('button[button-type="t"]')[8].getElementsByTagName('span')[0].innerHTML = "　";
-			}
+			// Disable 8 and 9 when selected straight or being as fan
+			document.querySelector('#button8').disabled = ((group_type === 'Straight') || (suit_type === 126976));
+			document.querySelector('#button9').disabled = ((group_type === 'Straight') || (suit_type === 126976));
 		};
 	})
 
