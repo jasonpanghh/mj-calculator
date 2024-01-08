@@ -287,7 +287,51 @@
 				</div>
 		</div>
 		<div class="modal-footer">
-        <button type="button" class="btn btn-primary">繼續</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DRModel">繼續</button>
+    	</div>
+	</div>
+	</div>
+	</div>
+
+	<!-- Modal for Dealer and Ready -->
+	<div class="modal fade" id="DRModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered">
+	<div class="modal-content">
+	    <div class="modal-header">
+	    	<h1 class="modal-title fs-5" id="exampleModalLabel">莊 / 叮</h1>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	    </div>
+	    <div class="modal-body">
+			<h2 class="fs-5">莊</h2>
+				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="btnradio4" id="d0" autocomplete="off" checked>
+				<label class="btn btn-outline-light px-4" for="d0">無關</label>
+				<input type="radio" class="btn-check" name="btnradio4" id="d1" autocomplete="off">
+				<label class="btn btn-outline-light px-4" for="d1">莊贏</label>
+				<input type="radio" class="btn-check" name="btnradio4" id="d2" autocomplete="off">
+				<label class="btn btn-outline-light px-4" for="d2">食莊</label>
+				</div>
+			<hr>
+			<h2 class="fs-5">連拉</h2>
+				<div class="btn-group" role="group" aria-label="Basic outlined example">
+				<button id="minusbutton" type="button" class="btn btn-outline-light px-3">-</button>
+				<button id="dealcounter" type="button" data-counter="0" class="btn btn-outline-light px-5" disabled>0</button>
+				<button id="plusbutton" type="button" class="btn btn-outline-light px-3">+</button>
+				</div>
+			<hr>
+			<div class="row">
+				<div class="col-3">
+					<input type="checkbox" class="btn-check" id="ready" autocomplete="off">
+					<label class="btn btn-outline-light px-4" for="ready">叮</label><br>
+				</div>
+				<div class="col-3">
+					<input type="checkbox" class="btn-check" id="readyone" autocomplete="off" disabled>
+					<label class="btn btn-outline-light px-4" for="readyone">一發</label><br>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">完成</button>
     	</div>
 	</div>
 	</div>

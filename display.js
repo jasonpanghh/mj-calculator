@@ -83,4 +83,31 @@ document.addEventListener('DOMContentLoaded', function()
 			document.querySelectorAll('button[button-type="tg"]')[group_number].getElementsByTagName('span')[0].innerHTML = output_tile;
 		};
 	})
+
+	// increment and decrement for counter
+	document.querySelector('#minusbutton').onclick = function ()
+	{
+		let temp = parseInt(document.querySelector('#dealcounter').dataset.counter) - 1;
+		if (temp > -1)
+		{
+			document.querySelector('#dealcounter').dataset.counter = temp.toString();
+			document.querySelector('#dealcounter').innerHTML = temp.toString();
+		}
+	}
+	document.querySelector('#plusbutton').onclick = function ()
+	{
+		let temp = parseInt(document.querySelector('#dealcounter').dataset.counter) + 1;
+		document.querySelector('#dealcounter').dataset.counter = temp.toString();
+		document.querySelector('#dealcounter').innerHTML = temp.toString();
+	}
+
+	// disable oneready when ready is not present
+	document.querySelector('#ready').onclick = function ()
+	{
+		document.querySelector('#readyone').disabled = !(document.querySelector('#ready').checked);
+		if (document.querySelector('#ready').checked === false)
+		{
+			document.querySelector('#readyone').checked = false;
+		}
+	}
 });
