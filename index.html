@@ -7,6 +7,9 @@
     	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     	<style type="text/css">
+    		[flower-tile-label]{
+    			padding: 1.5rem 1.25rem;
+    		}
     		.tile {
     			font-size: 10vw;
     		}
@@ -251,25 +254,25 @@
 			<h2 class="fs-5">春夏秋冬</h2>
 				<div class="btn-toolbar" role="toolbar" aria-label="Basic outlined example">
 				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower1" autocomplete="off">
-				<label class="btn btn-outline-danger px-4 py-4 me-2" for="flower1"><h3>一</h3></label>
+				<label class="btn btn-outline-danger me-2" flower-tile-label="true" for="flower1"><h3>一</h3></label>
 				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower2" autocomplete="off">
-				<label class="btn btn-outline-danger px-4 py-4 me-2" for="flower2"><h3>二</h3></label>
+				<label class="btn btn-outline-danger me-2" flower-tile-label="true" for="flower2"><h3>二</h3></label>
 				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower3" autocomplete="off">
-				<label class="btn btn-outline-danger px-4 py-4 me-2" for="flower3"><h3>三</h3></label>
+				<label class="btn btn-outline-danger me-2" flower-tile-label="true" for="flower3"><h3>三</h3></label>
 				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower4" autocomplete="off">
-				<label class="btn btn-outline-danger px-4 py-4 me-2" for="flower4"><h3>四</h3></label>
+				<label class="btn btn-outline-danger me-2" flower-tile-label="true" for="flower4"><h3>四</h3></label>
 				</div>
 			<hr>
 			<h2 class="fs-5">梅蘭菊竹</h2>
 				<div class="btn-toolbar" role="toolbar" aria-label="Basic outlined example">
 				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower5" autocomplete="off">
-				<label class="btn btn-outline-primary px-4 py-4 me-2" for="flower5"><h3>１</h3></label>
+				<label class="btn btn-outline-primary me-2" flower-tile-label="true" for="flower5"><h3>１</h3></label>
 				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower6" autocomplete="off">
-				<label class="btn btn-outline-primary px-4 py-4 me-2" for="flower6"><h3>２</h3></label>
+				<label class="btn btn-outline-primary me-2" flower-tile-label="true" for="flower6"><h3>２</h3></label>
 				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower7" autocomplete="off">
-				<label class="btn btn-outline-primary px-4 py-4 me-2" for="flower7"><h3>３</h3></label>
+				<label class="btn btn-outline-primary me-2" flower-tile-label="true" for="flower7"><h3>３</h3></label>
 				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower8" autocomplete="off">
-				<label class="btn btn-outline-primary px-4 py-4 me-2" for="flower8"><h3>４</h3></label>
+				<label class="btn btn-outline-primary me-2" flower-tile-label="true" for="flower8"><h3>４</h3></label>
 				</div>
 		</div>
 		<div class="modal-footer">
@@ -289,6 +292,7 @@
 	    </div>
 	    <div class="modal-body">
 			<h2 class="fs-5">莊</h2>
+				<div class="d-grid gap-2">
 				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 				<input type="radio" class="btn-check" name="btnradio4" id="d0" autocomplete="off" checked>
 				<label class="btn btn-outline-light px-4" for="d0">無關</label>
@@ -296,6 +300,7 @@
 				<label class="btn btn-outline-light px-4" for="d1">莊贏</label>
 				<input type="radio" class="btn-check" name="btnradio4" id="d2" autocomplete="off">
 				<label class="btn btn-outline-light px-4" for="d2">食莊</label>
+				</div>
 				</div>
 			<hr>
 			<h2 class="fs-5">連拉</h2>
@@ -335,6 +340,7 @@
 				<label class="btn btn-outline-light px-4" for="brightlast">明絕</label>
 			</div>
 			<hr>
+			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 			<input type="radio" class="btn-check" name="btnradio5" id="spin0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-3" for="spin0">沒有</label>
@@ -345,7 +351,9 @@
 			<input type="radio" class="btn-check" name="btnradio5" id="spin2" autocomplete="off">
 			<label class="btn btn-outline-light px-3" for="spin2">十隻內</label>
 			</div>
+			</div>
 			<hr>
+			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 			<input type="radio" class="btn-check" name="btnradio6" id="spr0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-4" for="spr0">沒有</label>
@@ -354,7 +362,9 @@
 			<input type="radio" class="btn-check" name="btnradio6" id="spr2" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="spr2">天聽</label>
 			</div>
+			</div>
 			<hr>
+			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 			<input type="radio" class="btn-check" name="btnradio7" id="spwin0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-3" for="spwin0">沒有</label>
@@ -365,7 +375,9 @@
 			<input type="radio" class="btn-check" name="btnradio7" id="spwin3" autocomplete="off">
 			<label class="btn btn-outline-light px-3" for="spwin3">天胡</label>
 			</div>
+			</div>
 			<hr>
+			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 			<input type="radio" class="btn-check" name="btnradio8" id="spmwin0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-4" for="spmwin0">沒有</label>
@@ -374,7 +386,9 @@
 			<input type="radio" class="btn-check" name="btnradio8" id="spmwin2" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="spmwin2">三響</label>
 			</div>
+			</div>
 			<hr>
+			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 			<input type="radio" class="btn-check" name="btnradio9" id="splast0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-4" for="splast0">沒有</label>
@@ -382,6 +396,7 @@
 			<label class="btn btn-outline-light px-4" for="splast1">海底撈魚</label>
 			<input type="radio" class="btn-check" name="btnradio9" id="splast2" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="splast2">海底撈月</label>
+			</div>
 			</div>
 			<hr>
 			<h2 class="fs-5">花上自摸</h2>
@@ -404,8 +419,6 @@
 	</div>
 	</div>
 	</div>
-
-	<!-- flower model needed modified -->
 
 	<!-- Win need ask: winning card(自摸打出), darkness, wind and position -->
 
