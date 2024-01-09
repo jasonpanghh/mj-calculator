@@ -6,12 +6,6 @@ let counter = 0;
 let temp_tile = "";
 let output_tile = "";
 
-function mark() 
-{
-	group_1 = 126976;
-	document.getElementById("tg1c").innerHTML = String.fromCodePoint(group_1);
-}
-
 document.addEventListener('DOMContentLoaded', function() 
 {
 	// record which group of tiles to be changed
@@ -84,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function()
 		};
 	})
 
-	// increment and decrement for counter
+	// increment and decrement for 3 counters
 	document.querySelector('#minusbutton').onclick = function ()
 	{
 		let temp = parseInt(document.querySelector('#dealcounter').dataset.counter) - 1;
@@ -99,6 +93,38 @@ document.addEventListener('DOMContentLoaded', function()
 		let temp = parseInt(document.querySelector('#dealcounter').dataset.counter) + 1;
 		document.querySelector('#dealcounter').dataset.counter = temp.toString();
 		document.querySelector('#dealcounter').innerHTML = temp.toString();
+	}
+
+	document.querySelector('#minusbutton2').onclick = function ()
+	{
+		let temp = parseInt(document.querySelector('#flowerselfwin').dataset.counter) - 1;
+		if (temp > -1)
+		{
+			document.querySelector('#flowerselfwin').dataset.counter = temp.toString();
+			document.querySelector('#flowerselfwin').innerHTML = temp.toString();
+		}
+	}
+	document.querySelector('#plusbutton2').onclick = function ()
+	{
+		let temp = parseInt(document.querySelector('#flowerselfwin').dataset.counter) + 1;
+		document.querySelector('#flowerselfwin').dataset.counter = temp.toString();
+		document.querySelector('#flowerselfwin').innerHTML = temp.toString();
+	}
+
+	document.querySelector('#minusbutton3').onclick = function ()
+	{
+		let temp = parseInt(document.querySelector('#kongselfwin').dataset.counter) - 1;
+		if (temp > -1)
+		{
+			document.querySelector('#kongselfwin').dataset.counter = temp.toString();
+			document.querySelector('#kongselfwin').innerHTML = temp.toString();
+		}
+	}
+	document.querySelector('#plusbutton3').onclick = function ()
+	{
+		let temp = parseInt(document.querySelector('#kongselfwin').dataset.counter) + 1;
+		document.querySelector('#kongselfwin').dataset.counter = temp.toString();
+		document.querySelector('#kongselfwin').innerHTML = temp.toString();
 	}
 
 	// disable oneready when ready is not present
