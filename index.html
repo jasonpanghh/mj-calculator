@@ -149,22 +149,22 @@
 		    <div class="d-grid gap-2">
 	    	<div class="row">
 	    		<div class="col-6 my-2">
-	  				<button id = "straight-button" button-type="gt" data-gt="Straight" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
+	  				<button id="straight-button" button-type="gt" data-gt="Straight" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
 	  				<span class="buttonTextNSize">順</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
-	  				<button button-type="gt" data-gt="Pong" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
+	  				<button id="pong-button" button-type="gt" data-gt="Pong" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
 	  				<span class="buttonTextNSize">碰</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
-	  				<button button-type="gt" data-gt="Kong" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
+	  				<button id="kong-button" button-type="gt" data-gt="Kong" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
 	  				<span class="buttonTextNSize">槓</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
-	  				<button id = "eye-button" button-type="gt" data-gt="Eye" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
+	  				<button id="eye-button" button-type="gt" data-gt="Eye" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
 	  				<span class="buttonTextNSize">眼</span>
 	    			</button>
 	    		</div>
@@ -248,46 +248,32 @@
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	    </div>
 	    <div class="modal-body">
-			<h2 class="fs-5">正花</h2>
-				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-				<input type="radio" class="btn-check" name="btnradio" id="gf0" autocomplete="off" checked>
-				<label class="btn btn-outline-light px-4" for="gf0">0</label>
-				<input type="radio" class="btn-check" name="btnradio" id="gf1" autocomplete="off">
-				<label class="btn btn-outline-light px-4" for="gf1">1</label>
-				<input type="radio" class="btn-check" name="btnradio" id="gf2" autocomplete="off">
-				<label class="btn btn-outline-light px-4" for="gf2">2</label>
+			<h2 class="fs-5">春夏秋冬</h2>
+				<div class="btn-toolbar" role="toolbar" aria-label="Basic outlined example">
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower1" autocomplete="off">
+				<label class="btn btn-outline-danger px-4 py-4 me-2" for="flower1"><h3>一</h3></label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower2" autocomplete="off">
+				<label class="btn btn-outline-danger px-4 py-4 me-2" for="flower2"><h3>二</h3></label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower3" autocomplete="off">
+				<label class="btn btn-outline-danger px-4 py-4 me-2" for="flower3"><h3>三</h3></label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower4" autocomplete="off">
+				<label class="btn btn-outline-danger px-4 py-4 me-2" for="flower4"><h3>四</h3></label>
 				</div>
 			<hr>
-			<h2 class="fs-5">爛花</h2>
-				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-				<input type="radio" class="btn-check" name="btnradio2" id="bf0" autocomplete="off" checked>
-				<label class="btn btn-outline-light px-3" for="bf0">0</label>
-				<input type="radio" class="btn-check" name="btnradio2" id="bf1" autocomplete="off">
-				<label class="btn btn-outline-light px-3" for="bf1">1</label>
-				<input type="radio" class="btn-check" name="btnradio2" id="bf2" autocomplete="off">
-				<label class="btn btn-outline-light px-3" for="bf2">2</label>
-				<input type="radio" class="btn-check" name="btnradio2" id="bf3" autocomplete="off">
-				<label class="btn btn-outline-light px-3" for="bf3">3</label>
-				<input type="radio" class="btn-check" name="btnradio2" id="bf4" autocomplete="off">
-				<label class="btn btn-outline-light px-3" for="bf4">4</label>
-				<input type="radio" class="btn-check" name="btnradio2" id="bf5" autocomplete="off">
-				<label class="btn btn-outline-light px-3" for="bf5">5</label>
-				<input type="radio" class="btn-check" name="btnradio2" id="bf6" autocomplete="off">
-				<label class="btn btn-outline-light px-3" for="bf6">6</label>
-				</div>
-			<hr>
-			<h2 class="fs-5">台花</h2>
-				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-				<input type="radio" class="btn-check" name="btnradio3" id="tf0" autocomplete="off" checked>
-				<label class="btn btn-outline-light px-4" for="tf0">0</label>
-				<input type="radio" class="btn-check" name="btnradio3" id="tf1" autocomplete="off">
-				<label class="btn btn-outline-light px-4" for="tf1">1</label>
-				<input type="radio" class="btn-check" name="btnradio3" id="tf2" autocomplete="off">
-				<label class="btn btn-outline-light px-4" for="tf2">2</label>
+			<h2 class="fs-5">梅蘭菊竹</h2>
+				<div class="btn-toolbar" role="toolbar" aria-label="Basic outlined example">
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower5" autocomplete="off">
+				<label class="btn btn-outline-primary px-4 py-4 me-2" for="flower5"><h3>１</h3></label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower6" autocomplete="off">
+				<label class="btn btn-outline-primary px-4 py-4 me-2" for="flower6"><h3>２</h3></label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower7" autocomplete="off">
+				<label class="btn btn-outline-primary px-4 py-4 me-2" for="flower7"><h3>３</h3></label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower8" autocomplete="off">
+				<label class="btn btn-outline-primary px-4 py-4 me-2" for="flower8"><h3>４</h3></label>
 				</div>
 		</div>
 		<div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DRModel">繼續</button>
+        <button id="flowermodelcont" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DRModel">無花</button>
     	</div>
 	</div>
 	</div>

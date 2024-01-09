@@ -5,6 +5,7 @@ let group_type = "Pong";
 let counter = 0;
 let temp_tile = "";
 let output_tile = "";
+let no_flower = true;
 
 document.addEventListener('DOMContentLoaded', function() 
 {
@@ -14,8 +15,12 @@ document.addEventListener('DOMContentLoaded', function()
 		button.onclick = function()
 		{
 			group_number = button.dataset.gp;
-			// only open eye button for group 6
+			// disable eye button for group 1-5
 			document.querySelector('#eye-button').disabled = !(group_number === '5')
+			// disable other buttons for group 6
+			document.querySelector('#pong-button').disabled = (group_number === '5')
+			document.querySelector('#kong-button').disabled = (group_number === '5')
+			document.querySelector('#straight-button').disabled = (group_number === '5')	
 		};
 	})
 
@@ -35,7 +40,10 @@ document.addEventListener('DOMContentLoaded', function()
 				document.querySelector('#button8').getElementsByTagName('span')[0].innerHTML = "　";
 				document.querySelector('#button9').getElementsByTagName('span')[0].innerHTML = "　";
 			}
-			document.querySelector('#straight-button').disabled = (suit_type === 126976);
+			if (suit_type === 126976)
+			{
+				document.querySelector('#straight-button').disabled = true
+			}
 		};
 	})	
 
@@ -136,4 +144,29 @@ document.addEventListener('DOMContentLoaded', function()
 			document.querySelector('#readyone').checked = false;
 		}
 	}
+
+	// change flower model continue button depending on situation
+	document.querySelectorAll('input[checkbox-type="flower"]').forEach(input =>
+	{
+		input.onclick = function()
+		{
+			no_flower = true;
+			document.querySelectorAll('input[checkbox-type="flower"]').forEach(input =>
+			{
+				if (input.checked) 
+				{
+					no_flower = false;
+				}
+			})
+			if (no_flower === false) 
+			{
+				document.querySelector('#flowermodelcont').innerHTML = "繼續";
+			}
+			else
+			{
+				document.querySelector('#flowermodelcont').innerHTML = "無花";
+			}
+		};
+	})
+
 });
