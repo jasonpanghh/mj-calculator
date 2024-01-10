@@ -7,13 +7,10 @@
     	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     	<style type="text/css">
-    		[flower-tile-label]{
-    			padding: 1.5rem 1.25rem;
-    		}
-    		.tile {
+    		.tile-big-display {
     			font-size: 10vw;
     		}
-    		.buttonTextNSize {
+    		.text-big-display {
     			font-size: 5vw;
     		}
     	</style>
@@ -30,63 +27,116 @@
 		</div>
 	</div>
 
+	<div style="margin: auto;width: 85%;">
+	<div class="d-grid gap-2 my-3">
+		<div class="row">
+			<div class="d-grid gap-2">
+				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="btnradio10" id="w0" autocomplete="off" checked>
+				<label class="btn btn-outline-light" for="w0">東風</label>
+				<input type="radio" class="btn-check" name="btnradio10" id="w1" autocomplete="off">
+				<label class="btn btn-outline-light" for="w1">南風</label>
+				<input type="radio" class="btn-check" name="btnradio10" id="w2" autocomplete="off">
+				<label class="btn btn-outline-light" for="w2">西風</label>
+				<input type="radio" class="btn-check" name="btnradio10" id="w3" autocomplete="off">
+				<label class="btn btn-outline-light" for="w3">北風</label>
+				</div>
+
+				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="btnradio11" id="p0" autocomplete="off" checked>
+				<label class="btn btn-outline-light" for="p0">東位</label>
+				<input type="radio" class="btn-check" name="btnradio11" id="p1" autocomplete="off">
+				<label class="btn btn-outline-light" for="p1">南位</label>
+				<input type="radio" class="btn-check" name="btnradio11" id="p2" autocomplete="off">
+				<label class="btn btn-outline-light" for="p2">西位</label>
+				<input type="radio" class="btn-check" name="btnradio11" id="p3" autocomplete="off">
+				<label class="btn btn-outline-light" for="p3">北位</label>
+				</div>
+
+				<div class="btn-toolbar" role="toolbar" aria-label="Basic checkbox group">
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower1" autocomplete="off">
+				<label class="btn btn-outline-danger w-25" for="flower1">春一</label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower2" autocomplete="off">
+				<label class="btn btn-outline-danger w-25" for="flower2">夏二</label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower3" autocomplete="off">
+				<label class="btn btn-outline-danger w-25" for="flower3">秋三</label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower4" autocomplete="off">
+				<label class="btn btn-outline-danger w-25" for="flower4">冬四</label>
+				</div>
+
+				<div class="btn-toolbar" role="toolbar" aria-label="Basic radio toggle button group">
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower5" autocomplete="off">
+				<label class="btn btn-outline-primary w-25" for="flower5">梅１</label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower6" autocomplete="off">
+				<label class="btn btn-outline-primary w-25" for="flower6">蘭２</label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower7" autocomplete="off">
+				<label class="btn btn-outline-primary w-25" for="flower7">菊３</label>
+				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower8" autocomplete="off">
+				<label class="btn btn-outline-primary w-25" for="flower8">竹４</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
     <div style="margin: auto;width: 85%;">
     <div class="d-grid gap-2">
     	<div class="row">
     		<!-- Group 1 -->
     		<div class="col-6 my-2">
-  				<button id="btg1" button-type="tg" data-gp="0" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
-  				<span class="tile">&#126983;&#126984;&#126985;</span>
+  				<button id="btg1" button-type="tg" data-gp="0" class="btn btn-outline-light w-100" type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
+  				<span class="tile-big-display">&#126983;&#126984;&#126985;</span>
     			</button>
   			</div>
   			<!-- Group 2 -->
     		<div class="col-6 my-2">
   				<button id="btg2" button-type="tg" data-gp="1" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
-  				<span class="tile">&#127004;&#127005;&#127006;</span>
+  				<span class="tile-big-display">&#127004;&#127005;&#127006;</span>
   				</button>
   			</div>
   			<!-- Group 3 -->
 			<div class="col-6 my-2">
   				<button id="btg3" button-type="tg" data-gp="2" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
-  				<span class="tile">&#126998;&#126999;&#127000;</span>
+  				<span class="tile-big-display">&#126998;&#126999;&#127000;</span>
   				</button>
   			</div>
   			<!-- Group 4 -->
     		<div class="col-6 my-2">
   				<button id="btg4" button-type="tg" data-gp="3" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
-  				<span class="tile">&#126976;&#126976;&#126976;</span>
+  				<span class="tile-big-display">&#126976;&#126976;&#126976;</span>
   				</button>
   			</div>
   			<!-- Group 5 -->
     		<div class="col-6 my-2">
   				<button id="btg5" button-type="tg" data-gp="4" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
-  				<span class="tile">&#126981;&#126981;&#126981;&#126981;</span>
+  				<span class="tile-big-display">&#126981;&#126981;&#126981;&#126981;</span>
   				</button>
   			</div>
   			<!-- Group 6 -->
 			<div class="col-6 my-2">
   				<button id="btg6" button-type="tg" data-gp="5" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
-  				<span class="tile">&#126987;&#126987;</span>
+  				<span class="tile-big-display">&#126987;&#126987;</span>
   				</button>
   			</div>
-  			<!-- Flower / Dealer / Ready -->
+  			<!-- Dealer / Ready -->
 			<div class="col-6 my-2">
-  				<button class="btn btn-outline-light w-100"  type="button" style="padding: 5.5vw 0vw" data-bs-toggle="modal" data-bs-target="#flowerModel">
-  				<span id="fc" class="buttonTextNSize">花/莊/叮</span>
+  				<button class="btn btn-outline-light w-100"  type="button" style="padding: 5.5vw 0vw" data-bs-toggle="modal" data-bs-target="#DRModal">
+  				<span class="text-big-display">莊/叮</span>
   				</button>
   			</div>
   			<!-- Special Events -->
 			<div class="col-6 my-2">
   				<button class="btn btn-outline-light w-100"  type="button" style="padding: 5.5vw 0vw" data-bs-toggle="modal" data-bs-target="#specialModal">
-  				<span class="buttonTextNSize">偶然事件</span>
+  				<span class="text-big-display">偶然事件</span>
   				</button>
   			</div>
 		</div>
 		<!-- Calculate Button -->
     	<div class="row">
     		<div class="col-6" style="margin: auto;">
-  				<button class="btn btn-secondary w-100"  type="button">
-  				<span class="buttonTextNSize">計算</span>
+  				<button id="calculate" class="btn btn-secondary w-100" type="button">
+  				<span class="text-big-display">計算</span>
     			</button>
   			</div>
   		</div>
@@ -103,11 +153,11 @@
 	</div>
 
 	<!-- Modal for Type of Suit -->
-	<div class="modal fade" id="tileTypeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="tileTypeModal" tabindex="-1" aria-labelledby="tileTypeModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 	<div class="modal-content">
 	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="exampleModalLabel">門款</h1>
+	    	<h1 class="modal-title fs-5" id="tileTypeModalLabel">門款</h1>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	    </div>
 	    <div class="modal-body">
@@ -115,22 +165,22 @@
 	    	<div class="row">
 	    		<div class="col-6 my-2">
 	  				<button button-type="st" data-st="127001" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#groupTypeModal">
-	  				<span class="buttonTextNSize">筒</span>
+	  				<span class="text-big-display">筒</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
 	  				<button button-type="st" data-st="126992" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#groupTypeModal">
-	  				<span class="buttonTextNSize">索</span>
+	  				<span class="text-big-display">索</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
 	  				<button button-type="st" data-st="126983" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#groupTypeModal">
-	  				<span class="buttonTextNSize">萬</span>
+	  				<span class="text-big-display">萬</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
 	  				<button button-type="st" data-st="126976" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#groupTypeModal">
-	  				<span class="buttonTextNSize">番</span>
+	  				<span class="text-big-display">番</span>
 	    			</button>
 	    		</div>
 	    	</div>
@@ -141,11 +191,11 @@
 	</div>
 
 	<!-- Modal for Type of Group -->
-	<div class="modal fade" id="groupTypeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="groupTypeModal" tabindex="-1" aria-labelledby="groupTypeModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 	<div class="modal-content">
 	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="exampleModalLabel">面款</h1>
+	    	<h1 class="modal-title fs-5" id="groupTypeModalLabel">面款</h1>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	    </div>
 	    <div class="modal-body">
@@ -153,22 +203,22 @@
 	    	<div class="row">
 	    		<div class="col-6 my-2">
 	  				<button id="straight-button" button-type="gt" data-gt="Straight" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
-	  				<span class="buttonTextNSize">順</span>
+	  				<span class="text-big-display">順</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
 	  				<button id="pong-button" button-type="gt" data-gt="Pong" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
-	  				<span class="buttonTextNSize">碰</span>
+	  				<span class="text-big-display">碰</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
 	  				<button id="kong-button" button-type="gt" data-gt="Kong" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
-	  				<span class="buttonTextNSize">槓</span>
+	  				<span class="text-big-display">槓</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-6 my-2">
 	  				<button id="eye-button" button-type="gt" data-gt="Eye" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
-	  				<span class="buttonTextNSize">眼</span>
+	  				<span class="text-big-display">眼</span>
 	    			</button>
 	    		</div>
 	    	</div>
@@ -180,11 +230,11 @@
 
 
 	<!-- Model of Type of Fan -->
-	<div class="modal fade" id="fanTypeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="fanTypeModal" tabindex="-1" aria-labelledby="fanTypeModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 	<div class="modal-content">
 	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="exampleModalLabel">牌款</h1>
+	    	<h1 class="modal-title fs-5" id="fanTypeModalLabel">牌款</h1>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	    </div>
 	    <div class="modal-body">
@@ -192,47 +242,47 @@
 	    	<div class="row">
 	    		<div class="col-4 my-2">
 	  				<button button-type="t" data-t="0" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-4 my-2">
 	  				<button button-type="t" data-t="1" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-4 my-2">
 	  				<button button-type="t" data-t="2" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-4 my-2">
 	  				<button button-type="t" data-t="3" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-4 my-2">
 	  				<button button-type="t" data-t="4" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-4 my-2">
 	  				<button button-type="t" data-t="5" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-4 my-2">
 	  				<button button-type="t" data-t="6" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-4 my-2">
 	  				<button id="button8" button-type="t" data-t="7" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    		<div class="col-4 my-2">
 	  				<button id="button9" button-type="t" data-t="8" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile">&#126982;</span>
+	  				<span class="tile-big-display">&#126982;</span>
 	    			</button>
 	    		</div>
 	    	</div>
@@ -242,52 +292,12 @@
 	</div>
 	</div>
 
-	<!-- Modal for Flower -->
-	<div class="modal fade" id="flowerModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-	<div class="modal-content">
-	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="exampleModalLabel">花</h1>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	    </div>
-	    <div class="modal-body">
-			<h2 class="fs-5">春夏秋冬</h2>
-				<div class="btn-toolbar" role="toolbar" aria-label="Basic outlined example">
-				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower1" autocomplete="off">
-				<label class="btn btn-outline-danger me-2" flower-tile-label="true" for="flower1"><h3>一</h3></label>
-				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower2" autocomplete="off">
-				<label class="btn btn-outline-danger me-2" flower-tile-label="true" for="flower2"><h3>二</h3></label>
-				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower3" autocomplete="off">
-				<label class="btn btn-outline-danger me-2" flower-tile-label="true" for="flower3"><h3>三</h3></label>
-				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower4" autocomplete="off">
-				<label class="btn btn-outline-danger me-2" flower-tile-label="true" for="flower4"><h3>四</h3></label>
-				</div>
-			<hr>
-			<h2 class="fs-5">梅蘭菊竹</h2>
-				<div class="btn-toolbar" role="toolbar" aria-label="Basic outlined example">
-				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower5" autocomplete="off">
-				<label class="btn btn-outline-primary me-2" flower-tile-label="true" for="flower5"><h3>１</h3></label>
-				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower6" autocomplete="off">
-				<label class="btn btn-outline-primary me-2" flower-tile-label="true" for="flower6"><h3>２</h3></label>
-				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower7" autocomplete="off">
-				<label class="btn btn-outline-primary me-2" flower-tile-label="true" for="flower7"><h3>３</h3></label>
-				<input type="checkbox" checkbox-type="flower" class="btn-check" id="flower8" autocomplete="off">
-				<label class="btn btn-outline-primary me-2" flower-tile-label="true" for="flower8"><h3>４</h3></label>
-				</div>
-		</div>
-		<div class="modal-footer">
-        <button id="flowermodelcont" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#DRModel">無花</button>
-    	</div>
-	</div>
-	</div>
-	</div>
-
 	<!-- Modal for Dealer and Ready -->
-	<div class="modal fade" id="DRModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="DRModal" tabindex="-1" aria-labelledby="DRModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered">
 	<div class="modal-content">
 	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="exampleModalLabel">莊 / 叮</h1>
+	    	<h1 class="modal-title fs-5" id="DRModalLabel">莊 / 叮</h1>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	    </div>
 	    <div class="modal-body">
@@ -325,11 +335,11 @@
 	</div>
 
 	<!-- Modal for Special Events -->
-	<div class="modal fade" id="specialModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="specialModal" tabindex="-1" aria-labelledby="specialModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 	<div class="modal-content">
 	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="exampleModalLabel">偶然事件</h1>
+	    	<h1 class="modal-title fs-5" id="specialModalLabel">偶然事件</h1>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	    </div>
 	    <div class="modal-body">
@@ -420,7 +430,9 @@
 	</div>
 	</div>
 
-	<!-- Win need ask: winning card(自摸打出), darkness, wind and position -->
+	<!-- flower and position and round 移上 -->
+	<!-- tile group button 大執 (include darkness)-->
+	<!-- 7th: big button 自摸/打出 食糊牌 莊 叮 -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

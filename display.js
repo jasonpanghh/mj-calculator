@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function()
 			}
 			if (suit_type === 126976)
 			{
-				document.querySelector('#straight-button').disabled = true
+				document.querySelector('#straight-button').disabled = true;
 			}
 		};
 	})	
@@ -145,28 +145,10 @@ document.addEventListener('DOMContentLoaded', function()
 		}
 	}
 
-	// change flower model continue button depending on situation
-	document.querySelectorAll('input[checkbox-type="flower"]').forEach(input =>
+	//calculate button
+	document.querySelector('#calculate').onclick = function()
 	{
-		input.onclick = function()
-		{
-			no_flower = true;
-			document.querySelectorAll('input[checkbox-type="flower"]').forEach(input =>
-			{
-				if (input.checked) 
-				{
-					no_flower = false;
-				}
-			})
-			if (no_flower === false) 
-			{
-				document.querySelector('#flowermodelcont').innerHTML = "繼續";
-			}
-			else
-			{
-				document.querySelector('#flowermodelcont').innerHTML = "無花";
-			}
-		};
-	})
+		alert("伺服器正維護中。不便之處，敬請原諒。");
+	};
 
 });
