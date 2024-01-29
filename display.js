@@ -1,90 +1,146 @@
 let group_1 = 0;
 let group_number = 0;
 let suit_type = 126976;
+let tile_int = 0;
 let group_type = "Pong";
 let counter = 0;
-let temp_tile = "";
 let output_tile = "";
 let no_flower = true;
 
+let temp_tile = "";
+let temp_string = "";
+
 document.addEventListener('DOMContentLoaded', function() 
 {
-	// record which group of tiles to be changed
-	document.querySelectorAll('button[button-type="tg"]').forEach(button =>
+	// initialize the tile modal
+	document.querySelectorAll('button[button-type="tile-big-button"]').forEach(button =>
 	{
 		button.onclick = function()
 		{
-			group_number = button.dataset.gp;
+			group_number = button.dataset.group;
+
+			// reset three radios
+			if (document.querySelector('input[name="suitRadio"]:checked'))
+			{
+				document.querySelector('input[name="suitRadio"]:checked').checked = false;
+			}
+			if (document.querySelector('input[name="meldTypeRadio"]:checked'))
+			{
+				document.querySelector('input[name="meldTypeRadio"]:checked').checked = false;
+			}
+			if (document.querySelector('input[name="tileSelectRadio"]:checked'))
+			{
+				document.querySelector('input[name="tileSelectRadio"]:checked').checked = false;
+			}
+
 			// disable eye button for group 1-5
-			document.querySelector('#eye-button').disabled = !(group_number === '5')
+			document.querySelector('#eye').disabled = !(group_number === '5');
+			if (group_number === '5')
+			{
+				document.querySelector('#eye').checked = true;
+			}
+
 			// disable other buttons for group 6
-			document.querySelector('#pong-button').disabled = (group_number === '5')
-			document.querySelector('#kong-button').disabled = (group_number === '5')
-			document.querySelector('#straight-button').disabled = (group_number === '5')	
-		};
-	})
+			document.querySelector('#pong').disabled = (group_number === '5');
+			document.querySelector('#kong').disabled = (group_number === '5');
+			document.querySelector('#sheung').disabled = (group_number === '5');
 
-	// record type of suit and change the suit of last selection page
-	document.querySelectorAll('button[button-type="st"]').forEach(button =>
-	{
-		button.onclick = function()
-		{
-			suit_type = parseInt(button.dataset.st);
-			document.querySelectorAll('button[button-type="t"]').forEach(button =>
+			// tile initialised as dot orderly
+			document.querySelectorAll('input[data-tilenumber]').forEach(input2 =>
 			{
-				button.getElementsByTagName('span')[0].innerHTML = String.fromCodePoint(suit_type + parseInt(button.dataset.t)) + "&#xFE0E;";
+				temp_string = 'label[data-tilenumber="' + input2.dataset.tilenumber + '"]';
+				document.querySelector(temp_string).children[0].innerHTML = String.fromCodePoint(127001 + parseInt(input2.dataset.tilenumber)) + "&#xFE0E;";
 			})	
-			// disabling and not showing button 8 and 9
-			if (suit_type === 126976)
-			{
-				document.querySelector('#button8').getElementsByTagName('span')[0].innerHTML = "　";
-				document.querySelector('#button9').getElementsByTagName('span')[0].innerHTML = "　";
-			}
-			if (suit_type === 126976)
-			{
-				document.querySelector('#straight-button').disabled = true;
-			}
-		};
-	})	
-
-	// record type of the group 
-	document.querySelectorAll('button[button-type="gt"]').forEach(button =>
-	{
-		button.onclick = function()
-		{
-			group_type = button.dataset.gt;
-			// Disable 8 and 9 when selected straight or being as fan
-			document.querySelector('#button8').disabled = ((group_type === 'Straight') || (suit_type === 126976));
-			document.querySelector('#button9').disabled = ((group_type === 'Straight') || (suit_type === 126976));
 		};
 	})
 
-	// changing outside display for last step
-	document.querySelectorAll('button[button-type="t"]').forEach(button =>
+	// action when clicking suit type 
+	document.querySelectorAll('input[radio-type="suit"]').forEach(input =>
 	{
-		button.onclick = function()
+		input.onclick = function()
 		{
-			temp_tile = String.fromCodePoint(suit_type + parseInt(button.dataset.t)) + "&#xFE0E;";
-			if (group_type === 'Eye')
+			// change tile face after suit type changed
+			document.querySelectorAll('input[data-tilenumber]').forEach(input2 =>
+			{
+				temp_string = 'label[data-tilenumber="' + input2.dataset.tilenumber + '"]';
+				document.querySelector(temp_string).children[0].innerHTML = String.fromCodePoint(parseInt(input.dataset.suitnumber) + parseInt(input2.dataset.tilenumber)) + "&#xFE0E;";
+			})	
+
+			// disable sheung type and tile 8&9 for fang type 
+			if (input.id === "fang")
+			{
+				document.querySelector('#sheung').checked = false;
+				document.querySelector('#sheung').disabled = true;
+				document.querySelector('#tile7').checked = false;
+				document.querySelector('#tile7').disabled = true;
+				document.querySelector('label[data-tilenumber="7"]').children[0].innerHTML = "　";
+				document.querySelector('#tile8').checked = false;
+				document.querySelector('#tile8').disabled = true;
+				document.querySelector('label[data-tilenumber="8"]').children[0].innerHTML = "　";
+			}
+			else
+			{
+				document.querySelector('#tile7').disabled = false;
+				document.querySelector('#tile8').disabled = false;
+				if (group_number != '5')
+				{
+				document.querySelector('#sheung').disabled = false;
+				}
+			}
+		}
+	})
+
+	// action when clicking meld type 
+	document.querySelectorAll('input[radio-type="meld"]').forEach(input =>
+	{
+		input.onclick = function()
+		{
+			// disable tile 8&9 for sheung type
+			if (input.id === "sheung")
+			{
+				document.querySelector('#tile7').checked = false;
+				document.querySelector('#tile7').disabled = true;
+				document.querySelector('#tile8').checked = false;
+				document.querySelector('#tile8').disabled = true;
+			}
+			else
+			{
+				document.querySelector('#tile7').disabled = false;
+				document.querySelector('#tile8').disabled = false;
+			}
+		}
+	})
+
+	// change outer meld display after finish tile modal
+	document.querySelector('#tileSelectDone').onclick = function() 
+	{
+		// change outer meld display only when all radio are checked
+		if ((document.querySelector('input[name="suitRadio"]:checked')) && (document.querySelector('input[name="meldTypeRadio"]:checked')) && (document.querySelector('input[name="tileSelectRadio"]:checked'))) 
+		{
+			suit_type = parseInt(document.querySelector('input[name="suitRadio"]:checked').dataset.suitnumber); 
+			group_type = document.querySelector('input[name="meldTypeRadio"]:checked').id;
+			tile_int = parseInt(document.querySelector('input[name="tileSelectRadio"]:checked').dataset.tilenumber);
+			temp_tile = String.fromCodePoint(suit_type + tile_int) + "&#xFE0E;";
+			if (group_type === 'eye')
 			{
 				output_tile = temp_tile + temp_tile;
 			}
-			if (group_type === 'Pong')
+			if (group_type === 'pong')
 			{
 				output_tile = temp_tile + temp_tile + temp_tile;
 			}
-			if (group_type === 'Kong')
+			if (group_type === 'kong')
 			{
 				output_tile = temp_tile + temp_tile + temp_tile + temp_tile;
 			}
-			if (group_type === 'Straight')
+			if (group_type === 'sheung')
 			{
-				output_tile = temp_tile + String.fromCodePoint(suit_type + parseInt(button.dataset.t) + 1) + "&#xFE0E;";
-				output_tile = output_tile + String.fromCodePoint(suit_type + parseInt(button.dataset.t) + 2) + "&#xFE0E;";
+				output_tile = temp_tile + String.fromCodePoint(suit_type + tile_int + 1) + "&#xFE0E;";
+				output_tile = output_tile + String.fromCodePoint(suit_type + tile_int + 2) + "&#xFE0E;";
 			}
-			document.querySelectorAll('button[button-type="tg"]')[group_number].getElementsByTagName('span')[0].innerHTML = output_tile;
-		};
-	})
+			document.querySelectorAll('button[button-type="tile-big-button"]')[group_number].getElementsByTagName('span')[0].innerHTML = output_tile;
+		}
+	}
 
 	// increment and decrement for 3 counters
 	document.querySelector('#minusbutton').onclick = function ()

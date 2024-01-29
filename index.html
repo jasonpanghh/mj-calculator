@@ -27,29 +27,30 @@
 		</div>
 	</div>
 
+	<!-- Radios for Wind/Round/Flowers -->
 	<div style="margin: auto;width: 85%;">
 	<div class="d-grid gap-2 my-3">
 		<div class="row">
 			<div class="d-grid gap-2">
 				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-				<input type="radio" class="btn-check" name="btnradio10" id="w0" autocomplete="off" checked>
+				<input type="radio" class="btn-check" name="windRadio" id="w0" autocomplete="off" checked>
 				<label class="btn btn-outline-light" for="w0">東風</label>
-				<input type="radio" class="btn-check" name="btnradio10" id="w1" autocomplete="off">
+				<input type="radio" class="btn-check" name="windRadio" id="w1" autocomplete="off">
 				<label class="btn btn-outline-light" for="w1">南風</label>
-				<input type="radio" class="btn-check" name="btnradio10" id="w2" autocomplete="off">
+				<input type="radio" class="btn-check" name="windRadio" id="w2" autocomplete="off">
 				<label class="btn btn-outline-light" for="w2">西風</label>
-				<input type="radio" class="btn-check" name="btnradio10" id="w3" autocomplete="off">
+				<input type="radio" class="btn-check" name="windRadio" id="w3" autocomplete="off">
 				<label class="btn btn-outline-light" for="w3">北風</label>
 				</div>
 
 				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-				<input type="radio" class="btn-check" name="btnradio11" id="p0" autocomplete="off" checked>
+				<input type="radio" class="btn-check" name="posRadio" id="p0" autocomplete="off" checked>
 				<label class="btn btn-outline-light" for="p0">東位</label>
-				<input type="radio" class="btn-check" name="btnradio11" id="p1" autocomplete="off">
+				<input type="radio" class="btn-check" name="posRadio" id="p1" autocomplete="off">
 				<label class="btn btn-outline-light" for="p1">南位</label>
-				<input type="radio" class="btn-check" name="btnradio11" id="p2" autocomplete="off">
+				<input type="radio" class="btn-check" name="posRadio" id="p2" autocomplete="off">
 				<label class="btn btn-outline-light" for="p2">西位</label>
-				<input type="radio" class="btn-check" name="btnradio11" id="p3" autocomplete="off">
+				<input type="radio" class="btn-check" name="posRadio" id="p3" autocomplete="off">
 				<label class="btn btn-outline-light" for="p3">北位</label>
 				</div>
 
@@ -80,42 +81,43 @@
 	</div>
 	</div>
 
+	<!-- Melds Display -->
     <div style="margin: auto;width: 85%;">
     <div class="d-grid gap-2">
     	<div class="row">
     		<!-- Group 1 -->
     		<div class="col-6 my-2">
-  				<button id="btg1" button-type="tg" data-gp="0" class="btn btn-outline-light w-100" type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
+  				<button id="btg1" button-type="tile-big-button" data-group="0" class="btn btn-outline-light w-100" type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#meldModal">
   				<span class="tile-big-display">&#126983;&#126984;&#126985;</span>
     			</button>
   			</div>
   			<!-- Group 2 -->
     		<div class="col-6 my-2">
-  				<button id="btg2" button-type="tg" data-gp="1" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
+  				<button id="btg2" button-type="tile-big-button" data-group="1" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#meldModal">
   				<span class="tile-big-display">&#127004;&#127005;&#127006;</span>
   				</button>
   			</div>
   			<!-- Group 3 -->
 			<div class="col-6 my-2">
-  				<button id="btg3" button-type="tg" data-gp="2" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
+  				<button id="btg3" button-type="tile-big-button" data-group="2" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#meldModal">
   				<span class="tile-big-display">&#126998;&#126999;&#127000;</span>
   				</button>
   			</div>
   			<!-- Group 4 -->
     		<div class="col-6 my-2">
-  				<button id="btg4" button-type="tg" data-gp="3" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
+  				<button id="btg4" button-type="tile-big-button" data-group="3" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#meldModal">
   				<span class="tile-big-display">&#126976;&#126976;&#126976;</span>
   				</button>
   			</div>
   			<!-- Group 5 -->
     		<div class="col-6 my-2">
-  				<button id="btg5" button-type="tg" data-gp="4" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
+  				<button id="btg5" button-type="tile-big-button" data-group="4" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#meldModal">
   				<span class="tile-big-display">&#126981;&#126981;&#126981;&#126981;</span>
   				</button>
   			</div>
   			<!-- Group 6 -->
 			<div class="col-6 my-2">
-  				<button id="btg6" button-type="tg" data-gp="5" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#tileTypeModal">
+  				<button id="btg6" button-type="tile-big-button" data-group="5" class="btn btn-outline-light w-100"  type="button" style="padding-bottom: 2.7vw;" data-bs-toggle="modal" data-bs-target="#meldModal">
   				<span class="tile-big-display">&#126987;&#126987;</span>
   				</button>
   			</div>
@@ -143,7 +145,7 @@
 	</div>
     </div>
 
-    <!-- Calculated List -->
+    <!-- Calculated Point List -->
     <div class="my-5" style="margin: auto;width: 60%;">
     	<ul class="list-group list-group-flush">
 		  <li class="list-group-item"><div class="d-flex w-100 justify-content-between"><span>對對糊</span><span>30番</span></div></li>
@@ -152,142 +154,81 @@
 		</ul>
 	</div>
 
-	<!-- Modal for Type of Suit -->
-	<div class="modal fade" id="tileTypeModal" tabindex="-1" aria-labelledby="tileTypeModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
+	<!-- Modal for Meld Input -->
+	<div class="modal fade" id="meldModal" tabindex="-1" aria-labelledby="specialModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 	<div class="modal-content">
 	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="tileTypeModalLabel">門款</h1>
+	    	<h1 class="modal-title fs-5" id="specialModalLabel">牌組</h1>
 	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 	    </div>
 	    <div class="modal-body">
-		    <div class="d-grid gap-2">
-	    	<div class="row">
-	    		<div class="col-6 my-2">
-	  				<button button-type="st" data-st="127001" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#groupTypeModal">
-	  				<span class="text-big-display">筒</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-6 my-2">
-	  				<button button-type="st" data-st="126992" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#groupTypeModal">
-	  				<span class="text-big-display">索</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-6 my-2">
-	  				<button button-type="st" data-st="126983" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#groupTypeModal">
-	  				<span class="text-big-display">萬</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-6 my-2">
-	  				<button button-type="st" data-st="126976" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#groupTypeModal">
-	  				<span class="text-big-display">番</span>
-	    			</button>
-	    		</div>
-	    	</div>
-		    </div>
+			<div class="d-grid gap-2 mb-2">
+			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="darknessRadio" id="dark" autocomplete="off" checked>
+				<label class="btn btn-outline-light px-3" for="dark">暗面</label>
+				<input type="radio" class="btn-check" name="darknessRadio" id="bright" autocomplete="off">
+				<label class="btn btn-outline-light px-3" for="bright">明面</label>
+			</div>
+			</div>
+			<div class="d-grid gap-2 mb-2">
+			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" radio-type="suit" name="suitRadio" id="dot" data-suitnumber="127001" autocomplete="off" checked>
+				<label class="btn btn-outline-light" style="font-size: 1.5em;" for="dot">筒</label>
+				<input type="radio" class="btn-check" radio-type="suit" name="suitRadio" id="bamboo" data-suitnumber="126992" autocomplete="off">
+				<label class="btn btn-outline-light" style="font-size: 1.5em;" for="bamboo">索</label>
+				<input type="radio" class="btn-check" radio-type="suit" name="suitRadio" id="mang" data-suitnumber="126983" autocomplete="off">
+				<label class="btn btn-outline-light" style="font-size: 1.5em;" for="mang">萬</label>
+				<input type="radio" class="btn-check" radio-type="suit" name="suitRadio" id="fang" data-suitnumber="126976" autocomplete="off">
+				<label class="btn btn-outline-light" style="font-size: 1.5em;" for="fang">番</label>
+			</div>
+			</div>
+			<div class="d-grid gap-2 mb-2">
+			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" radio-type="meld" name="meldTypeRadio" id="sheung" autocomplete="off" checked>
+				<label class="btn btn-outline-light" style="font-size: 1.5em;" for="sheung">順</label>
+				<input type="radio" class="btn-check" radio-type="meld" name="meldTypeRadio" id="pong" autocomplete="off">
+				<label class="btn btn-outline-light" style="font-size: 1.5em;" for="pong">碰</label>
+				<input type="radio" class="btn-check" radio-type="meld" name="meldTypeRadio" id="kong" autocomplete="off">
+				<label class="btn btn-outline-light" style="font-size: 1.5em;" for="kong">槓</label>
+				<input type="radio" class="btn-check" radio-type="meld" name="meldTypeRadio" id="eye" autocomplete="off">
+				<label class="btn btn-outline-light" style="font-size: 1.5em;" for="eye">眼</label>
+			</div>
+			</div>
+			<div class="d-grid gap-2 mb-2">
+			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile0" data-tilenumber="0" autocomplete="off" checked>
+				<label data-tilenumber="0" class="btn btn-outline-light pb-3" for="tile0"><span style="font-size: 3em">&#126983;</span></label>
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile1" data-tilenumber="1" autocomplete="off">
+				<label data-tilenumber="1" class="btn btn-outline-light pb-3" for="tile1"><span style="font-size: 3em">&#126983;</span></label>
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile2" data-tilenumber="2" autocomplete="off">
+				<label data-tilenumber="2" class="btn btn-outline-light pb-3" for="tile2"><span style="font-size: 3em">&#126983;</span></label>
+			</div>
+			</div>
+			<div class="d-grid gap-2 mb-2">
+			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile3" data-tilenumber="3" autocomplete="off">
+				<label data-tilenumber="3" class="btn btn-outline-light pb-3" for="tile3"><span style="font-size: 3em">&#126983;</span></label>
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile4" data-tilenumber="4" autocomplete="off">
+				<label data-tilenumber="4" class="btn btn-outline-light pb-3" for="tile4"><span style="font-size: 3em">&#126983;</span></label>
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile5" data-tilenumber="5" autocomplete="off">
+				<label data-tilenumber="5" class="btn btn-outline-light pb-3" for="tile5"><span style="font-size: 3em">&#126983;</span></label>
+			</div>
+			</div>
+			<div class="d-grid gap-2 mb-2">
+			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile6" data-tilenumber="6" autocomplete="off">
+				<label data-tilenumber="6" class="btn btn-outline-light pb-3" for="tile6"><span style="font-size: 3em">&#126983;</span></label>
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile7" data-tilenumber="7" autocomplete="off">
+				<label data-tilenumber="7" class="btn btn-outline-light pb-3" for="tile7"><span style="font-size: 3em">&#126983;</span></label>
+				<input type="radio" class="btn-check" name="tileSelectRadio" id="tile8" data-tilenumber="8" autocomplete="off">
+				<label data-tilenumber="8" class="btn btn-outline-light pb-3" for="tile8"><span style="font-size: 3em">&#126983;</span></label>
+			</div>
+			</div>
 		</div>
-	</div>
-	</div>
-	</div>
-
-	<!-- Modal for Type of Group -->
-	<div class="modal fade" id="groupTypeModal" tabindex="-1" aria-labelledby="groupTypeModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-	<div class="modal-content">
-	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="groupTypeModalLabel">面款</h1>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	    </div>
-	    <div class="modal-body">
-		    <div class="d-grid gap-2">
-	    	<div class="row">
-	    		<div class="col-6 my-2">
-	  				<button id="straight-button" button-type="gt" data-gt="Straight" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
-	  				<span class="text-big-display">順</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-6 my-2">
-	  				<button id="pong-button" button-type="gt" data-gt="Pong" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
-	  				<span class="text-big-display">碰</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-6 my-2">
-	  				<button id="kong-button" button-type="gt" data-gt="Kong" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
-	  				<span class="text-big-display">槓</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-6 my-2">
-	  				<button id="eye-button" button-type="gt" data-gt="Eye" class="btn btn-outline-light w-100" style="padding: 5vw 0vw;" type="button" data-bs-toggle="modal" data-bs-target="#fanTypeModal">
-	  				<span class="text-big-display">眼</span>
-	    			</button>
-	    		</div>
-	    	</div>
-		    </div>
-		</div>
-	</div>
-	</div>
-	</div>
-
-
-	<!-- Model of Type of Fan -->
-	<div class="modal fade" id="fanTypeModal" tabindex="-1" aria-labelledby="fanTypeModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered">
-	<div class="modal-content">
-	    <div class="modal-header">
-	    	<h1 class="modal-title fs-5" id="fanTypeModalLabel">牌款</h1>
-	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-	    </div>
-	    <div class="modal-body">
-		    <div class="d-grid gap-2">
-	    	<div class="row">
-	    		<div class="col-4 my-2">
-	  				<button button-type="t" data-t="0" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-4 my-2">
-	  				<button button-type="t" data-t="1" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-4 my-2">
-	  				<button button-type="t" data-t="2" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-4 my-2">
-	  				<button button-type="t" data-t="3" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-4 my-2">
-	  				<button button-type="t" data-t="4" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-4 my-2">
-	  				<button button-type="t" data-t="5" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-4 my-2">
-	  				<button button-type="t" data-t="6" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-4 my-2">
-	  				<button id="button8" button-type="t" data-t="7" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    		<div class="col-4 my-2">
-	  				<button id="button9" button-type="t" data-t="8" class="btn btn-outline-light w-100" style="padding-bottom: 2.7vw;" type="button" data-bs-toggle="modal" data-bs-target="#secondModal">
-	  				<span class="tile-big-display">&#126982;</span>
-	    			</button>
-	    		</div>
-	    	</div>
-		    </div>
-		</div>
+		<div class="modal-footer">
+        <button id="tileSelectDone" type="button" class="btn btn-primary" data-bs-dismiss="modal">完成</button>
+    	</div>
 	</div>
 	</div>
 	</div>
@@ -304,11 +245,11 @@
 			<h2 class="fs-5">莊</h2>
 				<div class="d-grid gap-2">
 				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-				<input type="radio" class="btn-check" name="btnradio4" id="d0" autocomplete="off" checked>
+				<input type="radio" class="btn-check" name="dealerRadio" id="d0" autocomplete="off" checked>
 				<label class="btn btn-outline-light px-4" for="d0">無關</label>
-				<input type="radio" class="btn-check" name="btnradio4" id="d1" autocomplete="off">
+				<input type="radio" class="btn-check" name="dealerRadio" id="d1" autocomplete="off">
 				<label class="btn btn-outline-light px-4" for="d1">莊贏</label>
-				<input type="radio" class="btn-check" name="btnradio4" id="d2" autocomplete="off">
+				<input type="radio" class="btn-check" name="dealerRadio" id="d2" autocomplete="off">
 				<label class="btn btn-outline-light px-4" for="d2">食莊</label>
 				</div>
 				</div>
@@ -352,59 +293,59 @@
 			<hr>
 			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio5" id="spin0" autocomplete="off" checked>
+			<input type="radio" class="btn-check" name="fastWinRadio" id="spin0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-3" for="spin0">沒有</label>
-			<input type="radio" class="btn-check" name="btnradio5" id="spin1" autocomplete="off">
+			<input type="radio" class="btn-check" name="fastWinRadio" id="spin1" autocomplete="off">
 			<label class="btn btn-outline-light px-3" for="spin1">四隻內</label>
-			<input type="radio" class="btn-check" name="btnradio5" id="spin2" autocomplete="off">
+			<input type="radio" class="btn-check" name="fastWinRadio" id="spin2" autocomplete="off">
 			<label class="btn btn-outline-light px-3" for="spin2">七隻內</label>
-			<input type="radio" class="btn-check" name="btnradio5" id="spin2" autocomplete="off">
+			<input type="radio" class="btn-check" name="fastWinRadio" id="spin2" autocomplete="off">
 			<label class="btn btn-outline-light px-3" for="spin2">十隻內</label>
 			</div>
 			</div>
 			<hr>
 			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio6" id="spr0" autocomplete="off" checked>
+			<input type="radio" class="btn-check" name="imReadyRadio" id="spr0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-4" for="spr0">沒有</label>
-			<input type="radio" class="btn-check" name="btnradio6" id="spr1" autocomplete="off">
+			<input type="radio" class="btn-check" name="imReadyRadio" id="spr1" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="spr1">地聽</label>
-			<input type="radio" class="btn-check" name="btnradio6" id="spr2" autocomplete="off">
+			<input type="radio" class="btn-check" name="imReadyRadio" id="spr2" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="spr2">天聽</label>
 			</div>
 			</div>
 			<hr>
 			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio7" id="spwin0" autocomplete="off" checked>
+			<input type="radio" class="btn-check" name="imWinRadio" id="spwin0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-3" for="spwin0">沒有</label>
-			<input type="radio" class="btn-check" name="btnradio7" id="spwin1" autocomplete="off">
+			<input type="radio" class="btn-check" name="imWinRadio" id="spwin1" autocomplete="off">
 			<label class="btn btn-outline-light px-3" for="spwin1">人胡</label>
-			<input type="radio" class="btn-check" name="btnradio7" id="spwin2" autocomplete="off">
+			<input type="radio" class="btn-check" name="imWinRadio" id="spwin2" autocomplete="off">
 			<label class="btn btn-outline-light px-3" for="spwin2">地胡</label>
-			<input type="radio" class="btn-check" name="btnradio7" id="spwin3" autocomplete="off">
+			<input type="radio" class="btn-check" name="imWinRadio" id="spwin3" autocomplete="off">
 			<label class="btn btn-outline-light px-3" for="spwin3">天胡</label>
 			</div>
 			</div>
 			<hr>
 			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio8" id="spmwin0" autocomplete="off" checked>
+			<input type="radio" class="btn-check" name="multiWinRadio" id="spmwin0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-4" for="spmwin0">沒有</label>
-			<input type="radio" class="btn-check" name="btnradio8" id="spmwin1" autocomplete="off">
+			<input type="radio" class="btn-check" name="multiWinRadio" id="spmwin1" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="spmwin1">雙響</label>
-			<input type="radio" class="btn-check" name="btnradio8" id="spmwin2" autocomplete="off">
+			<input type="radio" class="btn-check" name="multiWinRadio" id="spmwin2" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="spmwin2">三響</label>
 			</div>
 			</div>
 			<hr>
 			<div class="d-grid gap-2">
 			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-			<input type="radio" class="btn-check" name="btnradio9" id="splast0" autocomplete="off" checked>
+			<input type="radio" class="btn-check" name="lastTileWinRadio" id="splast0" autocomplete="off" checked>
 			<label class="btn btn-outline-light px-4" for="splast0">沒有</label>
-			<input type="radio" class="btn-check" name="btnradio9" id="splast1" autocomplete="off">
+			<input type="radio" class="btn-check" name="lastTileWinRadio" id="splast1" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="splast1">海底撈魚</label>
-			<input type="radio" class="btn-check" name="btnradio9" id="splast2" autocomplete="off">
+			<input type="radio" class="btn-check" name="lastTileWinRadio" id="splast2" autocomplete="off">
 			<label class="btn btn-outline-light px-4" for="splast2">海底撈月</label>
 			</div>
 			</div>
@@ -430,9 +371,9 @@
 	</div>
 	</div>
 
-	<!-- flower and position and round 移上 -->
-	<!-- tile group button 大執 (include darkness)-->
+	<!-- Darkness of meld not yet reflected on outer melds display-->
 	<!-- 7th: big button 自摸/打出 食糊牌 莊 叮 -->
+	<!-- Some radios needed to be reset after calculation -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
